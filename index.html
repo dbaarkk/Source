@@ -1,53 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Sovereign Sites | Premium Web Development Agency</title>
+    <meta name="description" content="We engineer high-conversion websites that transform businesses. Premium web development, SEO, and digital solutions."/>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:italic&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: '#c9ff00',
+                        brandDark: '#b8e600',
+                    }
+                }
+            }
+        }
+    </script>
 
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=800&fit=crop"/>
-
-  <link rel="stylesheet" href="/_next/static/css/c714605aba8200d8.css?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" data-precedence="next"/>
-
-  <link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-60d835819e29e072.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC"/>
-
-  <script src="/_next/static/chunks/4bd1b696-fc09fd79feedbf53.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/684-82855c3481a0b588.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/main-app-b8b88b0914fccdba.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/736-f46b0b02c1879cb8.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/app/layout-06f307d098e89b84.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/383-51084f52face7bcc.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/app/page-f292e940fc60dec3.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-  <script src="/_next/static/chunks/app/global-error-b699545e23f8ece9.js?dpl=dpl_D3bA7uCX2gLzvuAyymqLFZds6yTC" async></script>
-
-  <title>Sovereign Sites | Premium Web Development Agency</title>
-
-  <meta name="description" content="We engineer high-conversion websites that transform businesses. Premium web development, SEO, and digital solutions."/>
-
-  <meta property="og:title" content="Sovereign Sites | Premium Web Development Agency"/>
-  <meta property="og:description" content="We engineer high-conversion websites that transform businesses. Premium web development, SEO, and digital solutions."/>
-  <meta property="og:site_name" content="Sovereign Sites"/>
-  <meta property="og:image" content="https://sovereignsites.vercel.app/og-image.png"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="1200"/>
-  <meta property="og:type" content="website"/>
-
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Sovereign Sites | Premium Web Development Agency"/>
-  <meta name="twitter:description" content="We engineer high-conversion websites that transform businesses."/>
-  <meta name="twitter:image" content="https://sovereignsites.vercel.app/og-image.png"/>
-
-  <link rel="icon" href="/favicon.ico"/>
-  <link rel="icon" href="/favicon.png" type="image/png"/>
-  <link rel="apple-touch-icon" href="/apple-icon.png"/>
-
-  <script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" nomodule></script>
+    <style>
+        body { background-color: #0a0a0a; color: white; -webkit-font-smoothing: antialiased; }
+        .grid-bg {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSA2MCAwIEwgMCAwIDAgNjAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+');
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(201, 255, 0, 0.1) 0%, transparent 70%);
+        }
+        .cursor-none { cursor: none; }
+        @media (max-width: 768px) { .cursor-none { cursor: auto; } }
+    </style>
 </head>
+<body class="antialiased overflow-x-hidden">
 
-<body class="antialiased">
-  <main class="min-h-screen bg-[#0a0a0a] text-white overflow-x-hidden cursor-none">
-    <!-- FULL BODY CONTENT PRESERVED -->
-  </main>
+    <div class="fixed top-0 left-0 w-8 h-8 pointer-events-none z-[100] mix-blend-difference hidden md:block" id="custom-cursor">
+        <div class="w-full h-full bg-white rounded-full"></div>
+    </div>
 
-  <script src="/_next/static/chunks/webpack-60d835819e29e072.js" async></script>
+    <main class="min-h-screen bg-[#0a0a0a] text-white">
+        
+        <nav class="fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 transition-all duration-500">
+            <div class="mx-auto max-w-7xl">
+                <div class="flex items-center justify-between rounded-full border border-white/10 bg-black/60 backdrop-blur-xl px-6 py-3">
+                    <a href="#" class="text-xl font-bold tracking-tight">Sovereign<span class="text-brand">.</span></a>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a href="#services" class="text-sm text-white/60 hover:text-white transition-colors">Services</a>
+                        <a href="#about" class="text-sm text-white/60 hover:text-white transition-colors">About</a>
+                        <a href="#contact" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a>
+                    </div>
+                    <button class="hidden md:flex items-center gap-2 bg-brand text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-brandDark transition-colors">
+                        Start a Project
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                    </button>
+                    <button class="md:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-24">
+            <div class="absolute inset-0 hero-gradient"></div>
+            <div class="absolute inset-0 grid-bg opacity-50"></div>
+            <div class="relative z-10 px-6 md:px-12 text-center">
+                <div class="mb-6">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/60">
+                        <span class="w-2 h-2 rounded-full bg-brand animate-pulse"></span>
+                        Premium Web Development Agency
+                    </span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9] mb-8">
+                    We build websites<br/>
+                    <span class="font-serif italic font-normal text-brand">that convert</span>
+                </h1>
+                <p class="mx-auto max-w-2xl text-lg md:text-xl text-white/60 mb-12">
+                    High-performance digital experiences engineered for growth. We transform ambitious businesses into market leaders through strategic design and development.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#contact" class="group flex items-center gap-3 bg-brand text-black px-8 py-4 rounded-full text-base font-semibold hover:bg-brandDark transition-all">
+                        Start Your Project
+                        <svg class="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17 17 7"/></svg>
+                    </a>
+                    <a href="#services" class="flex items-center gap-3 border border-white/20 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-white/5 transition-all">View Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 md:px-12 border-y border-white/10">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-16 text-center">
+                    <span class="text-brand text-sm font-semibold uppercase tracking-wider mb-4 block">How We Work</span>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight">Our <span class="font-serif italic font-normal text-white/60">Process</span></h2>
+                </div>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="relative group">
+                        <div class="text-6xl font-bold text-white/5 absolute -top-4 -left-2 group-hover:text-brand/10 transition-colors">01</div>
+                        <div class="relative pt-8">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand transition-colors">Discovery</h3>
+                            <p class="text-white/50 text-sm leading-relaxed">We dive deep into your business, goals, and target audience to understand what success looks like for you.</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="text-6xl font-bold text-white/5 absolute -top-4 -left-2 group-hover:text-brand/10 transition-colors">02</div>
+                        <div class="relative pt-8">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand transition-colors">Strategy</h3>
+                            <p class="text-white/50 text-sm leading-relaxed">We craft a tailored roadmap that aligns your digital presence with your business objectives.</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="text-6xl font-bold text-white/5 absolute -top-4 -left-2 group-hover:text-brand/10 transition-colors">03</div>
+                        <div class="relative pt-8">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand transition-colors">Design & Build</h3>
+                            <p class="text-white/50 text-sm leading-relaxed">Our team brings the vision to life with pixel-perfect design and clean, performant code.</p>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <div class="text-6xl font-bold text-white/5 absolute -top-4 -left-2 group-hover:text-brand/10 transition-colors">04</div>
+                        <div class="relative pt-8">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-brand transition-colors">Launch & Grow</h3>
+                            <p class="text-white/50 text-sm leading-relaxed">We deploy your project and provide ongoing support to ensure continuous improvement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="pt-32 pb-0 px-6 md:px-12">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-20">
+                    <span class="text-brand text-sm font-semibold uppercase tracking-wider mb-4 block">What We Do</span>
+                    <h2 class="text-4xl md:text-6xl font-bold tracking-tight">Services that drive<br/><span class="font-serif italic font-normal text-white/60">real results</span></h2>
+                </div>
+                <div class="space-y-0">
+                    <div class="group border-t border-white/10 py-10 md:py-14">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
+                            <span class="text-brand text-sm font-mono">01</span>
+                            <h3 class="text-2xl md:text-4xl font-bold flex-1 group-hover:text-brand transition-colors">Web Development</h3>
+                            <p class="text-white/50 max-w-md flex-1">High-performance websites engineered for conversion. From landing pages to complex web applications.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">React</span>
+                                <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group border-t border-white/10 py-10 md:py-14">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
+                            <span class="text-brand text-sm font-mono">02</span>
+                            <h3 class="text-2xl md:text-4xl font-bold flex-1 group-hover:text-brand transition-colors">UI/UX Design</h3>
+                            <p class="text-white/50 max-w-md flex-1">Strategic design that captures attention and drives action. Every pixel serves a purpose.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-32 px-6 md:px-12 bg-[#0f0f0f]">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid md:grid-cols-2 gap-16 md:gap-24">
+                    <div>
+                        <span class="text-brand text-sm font-semibold uppercase tracking-wider mb-4 block">Get In Touch</span>
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8">Let's start your<br/><span class="font-serif italic font-normal text-white/60">success story</span></h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-brand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                                </div>
+                                <div><div class="text-white/50 text-sm">Email</div><div class="font-medium">sovereign.webdevs@gmail.com</div></div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-brand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div><div class="text-white/50 text-sm">WhatsApp</div><div class="font-medium">+91 6263288522</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button class="w-full mb-6 bg-brand text-black py-4 rounded-xl font-semibold hover:bg-brandDark transition-colors flex items-center justify-center gap-3">
+                            Get Started on WhatsApp
+                        </button>
+                        <form class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm text-white/50 mb-2">Name</label>
+                                    <input type="text" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label class="block text-sm text-white/50 mb-2">Email</label>
+                                    <input type="email" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors" placeholder="john@company.com">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm text-white/50 mb-2">Message</label>
+                                <textarea rows="5" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand transition-colors resize-none" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand text-black py-4 rounded-xl font-semibold hover:bg-brandDark transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-12 px-6 md:px-12 border-t border-white/10">
+            <div class="mx-auto max-w-7xl flex flex-col md:flex-row md:items-center md:justify-between gap-8 text-center md:text-left">
+                <div>
+                    <a href="#" class="text-2xl font-bold tracking-tight">Sovereign<span class="text-brand">.</span></a>
+                    <p class="text-white/40 text-sm mt-2">Engineering digital excellence since 2019</p>
+                </div>
+                <div class="flex justify-center gap-8">
+                    <a href="#services" class="text-white/50 hover:text-white transition-colors text-sm">Services</a>
+                    <a href="#about" class="text-white/50 hover:text-white transition-colors text-sm">About</a>
+                    <a href="#contact" class="text-white/50 hover:text-white transition-colors text-sm">Contact</a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-white/40 text-sm">
+                © 2026 Sovereign Sites. All rights reserved.
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Custom Cursor Logic
+        const cursor = document.getElementById('custom-cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX - 16}px, ${e.clientY - 16}px)`;
+        });
+
+        // Hide cursor when not moving/off screen
+        document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+        document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+    </script>
 </body>
-</html>
+  </html>                                                                                                             
